@@ -1,3 +1,8 @@
+require_relative 'redis_version_check'
+
+# Vérifier la version de Redis
+RedisVersionCheck.check
+
 require 'master_lock/redis_scripts'
 
 module MasterLock
